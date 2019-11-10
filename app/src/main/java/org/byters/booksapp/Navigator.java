@@ -2,6 +2,7 @@ package org.byters.booksapp;
 
 import android.support.v4.app.FragmentManager;
 
+import org.byters.booksapp.view.ui.fragment.FragmentBook;
 import org.byters.booksapp.view.ui.fragment.FragmentBookRequest;
 import org.byters.booksapp.view.ui.fragment.FragmentExplore;
 
@@ -31,6 +32,14 @@ public class Navigator implements INavigator {
         if (refManager == null || refManager.get() == null) return;
         refManager.get().beginTransaction()
                 .replace(layoutId, new FragmentBookRequest())
+                .commit();
+    }
+
+    @Override
+    public void navigateBook() {
+        if (refManager == null || refManager.get() == null) return;
+        refManager.get().beginTransaction()
+                .replace(layoutId, new FragmentBook())
                 .commit();
     }
 

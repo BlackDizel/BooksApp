@@ -6,6 +6,7 @@ import org.byters.booksapp.view.presenter.PresenterAdapterExplore;
 import org.byters.booksapp.view.presenter.PresenterExplore;
 import org.byters.booksapp.view.ui.activity.ActivityMain;
 import org.byters.booksapp.view.ui.adapter.AdapterBookRequest;
+import org.byters.booksapp.view.ui.adapter.AdapterBookReview;
 import org.byters.booksapp.view.ui.adapter.AdapterExplore;
 import org.byters.booksapp.view.ui.adapter.AdapterExploreBooksCarousel;
 import org.byters.booksapp.view.ui.adapter.AdapterExploreNews;
@@ -16,6 +17,8 @@ import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderExploreCarouselB
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderExploreSearch;
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderNews;
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderReview;
+import org.byters.booksapp.view.ui.adapter.AdapterBookLibrary;
+import org.byters.booksapp.view.ui.fragment.FragmentBook;
 import org.byters.booksapp.view.ui.fragment.FragmentExplore;
 
 import javax.inject.Singleton;
@@ -56,4 +59,10 @@ public interface AppComponent {
     void inject(ViewHolderNews viewHolderNews);
 
     void inject(AdapterBookRequest adapterBookRequest);
+
+    void inject(FragmentBook fragmentBook);
+
+    void inject(AdapterBookLibrary adapterBookLibrary);
+
+    void inject(AdapterBookReview adapterBookReview);
 }

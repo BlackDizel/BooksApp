@@ -8,4 +8,6 @@ public interface INavigator {
     void set(FragmentManager supportFragmentManager, int flContainer);
 
     void navigateBookRequest();
+
+    void navigateBook();
 }

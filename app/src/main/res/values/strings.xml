@@ -15,4 +15,6 @@
     <string name="book_author">Автор книги (необязательно)</string>
     <string name="book_isbn">ISBN (необязательно)</string>
     <string name="book_link">Ссылка на книгу (необязательно)</string>
+    <string name="book_rent">Зарезервировать</string>
+    <string name="library_available">Наличие в библиотеках</string>
 </resources>
