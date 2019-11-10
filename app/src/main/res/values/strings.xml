@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BooksApp</string>
+    <string name="page_main">Главная</string>
+    <string name="page_profile">Мои книги</string>
+    <string name="search">Поиск</string>
+    <string name="empty" />
+    <string name="title_books">Новинки</string>
+    <string name="title_periodic">Периодика</string>
+    <string name="title_reviews">Свежие отзывы</string>
+    <string name="library_all">Все библиотеки</string>
+</resources>

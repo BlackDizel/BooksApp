@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "type": 1,
+      "news": [
+        {
+          "title": "библиотека провели ночь исскусств",
+          "image": "http://placekitten.com/501/500",
+          "url": "http://google.com"
+        },
+        {
+          "title": "приходите на киноночь",
+          "image": "http://placekitten.com/502/500",
+          "url": "http://ya.ru"
+        },
+        {
+          "title": "в эту среду ремонт",
+          "image": "http://placekitten.com/503/500",
+          "url": "http://vk.com"
+        }
+      ]
+    },
+    {
+      "type": 2
+    },
+    {
+      "type": 3,
+      "title": "Популярное",
+      "items": [
+        {
+          "bookId": "4",
+          "title": "50 оттенков серого",
+          "image": "http://placekitten.com/504/500"
+        },
+        {
+          "bookId": "5",
+          "title": "история россии",
+          "image": "http://placekitten.com/505/500"
+        },
+        {
+          "bookId": "6",
+          "title": "тихий дон",
+          "image": "http://placekitten.com/506/500"
+        }
+      ]
+    },
+
+    {
+      "type":3,
+      "title": "Свежие поступления",
+      "items": [
+        {
+          "bookId": "7",
+          "title": "таймменеджмент от а до я",
+          "image": "http://placekitten.com/507/500"
+        },
+        {
+          "bookId": "8",
+          "title": "как приручить дракона",
+          "image": "http://placekitten.com/508/500"
+        },
+        {
+          "bookId": "9",
+          "title": "Веселые картинки",
+          "image": "http://placekitten.com/509/500"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Периодика",
+      "items": [
+        {
+          "bookId": "10",
+          "title": "За рулем, август 2025",
+          "image": "http://placekitten.com/510/500"
+        },
+        {
+          "bookId": "11",
+          "title": "Моделист конструктор, сентябрь 2024",
+          "image": "http://placekitten.com/511/500"
+        },
+        {
+          "bookId": "12",
+          "title": "Сноб, октябрь 2025",
+          "image": "http://placekitten.com/512/500"
+        }
+      ]
+    },
+    {
+      "type": 4,
+      "reviews": [
+        {
+          "bookId": "1",
+          "book": "азбука",
+          "username": "Александр",
+          "review": "очень полезная и простая книга, прочитал залпом, советую приобрести в личную библиотеку"
+        },
+        {
+          "bookId": "2",
+          "book": "Три мушкетера",
+          "username": "Василий",
+          "review": "Сложная и длинная, скучная книга, в аудиоформате еще более менее, но читать долго"
+        },
+        {
+          "bookId": "3",
+          "book": "Сборник стихов поэтов себерянного века",
+          "username": "Алевтина",
+          "review": "Больше всего понравились первый стих и второй"
+        }
+      ]
+    }
+  ]
+}
