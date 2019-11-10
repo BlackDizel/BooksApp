@@ -7,6 +7,7 @@
     android:orientation="horizontal">
 
     <TextView
+        android:id="@+id/ivExplore"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:drawableTop="@drawable/ic_explore_black_24dp"
@@ -16,6 +17,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
 
     <TextView
+        android:id="@+id/ivProfile"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:drawableTop="@drawable/ic_person_black_24dp"

@@ -43,4 +43,9 @@ public class Navigator implements INavigator {
                 .commit();
     }
 
+    @Override
+    public void navigateProfile() {
+
+    }
+
 }

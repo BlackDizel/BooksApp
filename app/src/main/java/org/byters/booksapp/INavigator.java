@@ -10,4 +10,6 @@ public interface INavigator {
     void navigateBookRequest();
 
     void navigateBook();
+
+    void navigateProfile();
 }
