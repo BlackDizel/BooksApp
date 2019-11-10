@@ -6,4 +6,6 @@ public interface INavigator {
     void navigateExplore();
 
     void set(FragmentManager supportFragmentManager, int flContainer);
+
+    void navigateBookRequest();
 }

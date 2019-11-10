@@ -8,4 +8,11 @@
     <string name="title_periodic">Периодика</string>
     <string name="title_reviews">Свежие отзывы</string>
     <string name="library_all">Все библиотеки</string>
+    <string name="book_request_title">Данная книга не найдена в библиотеках</string>
+    <string name="book_request_message">Хотите отправить запрос на добавление книги в фонды?</string>
+    <string name="mock_book_title">Растениеводство от А до Я</string>
+    <string name="request_book">Заказать книгу</string>
+    <string name="book_author">Автор книги (необязательно)</string>
+    <string name="book_isbn">ISBN (необязательно)</string>
+    <string name="book_link">Ссылка на книгу (необязательно)</string>
 </resources>

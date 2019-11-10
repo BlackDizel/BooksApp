@@ -5,8 +5,10 @@ import org.byters.booksapp.memorycache.CacheExplore;
 import org.byters.booksapp.memorycache.ICacheExplore;
 import org.byters.booksapp.repository.IRepositoryExplore;
 import org.byters.booksapp.repository.RepositoryExplore;
+import org.byters.booksapp.view.presenter.IPresenterAdapterBookSuggest;
 import org.byters.booksapp.view.presenter.IPresenterAdapterExplore;
 import org.byters.booksapp.view.presenter.IPresenterExplore;
+import org.byters.booksapp.view.presenter.PresenterAdapterBookSuggest;
 import org.byters.booksapp.view.presenter.PresenterAdapterExplore;
 import org.byters.booksapp.view.presenter.PresenterExplore;
 
@@ -32,19 +34,25 @@ class AppModule {
 
     @Provides
     @Singleton
-    ICacheExplore cacheExplore(){
+    IPresenterAdapterBookSuggest presenterAdapterBookSuggest() {
+        return new PresenterAdapterBookSuggest();
+    }
+
+    @Provides
+    @Singleton
+    ICacheExplore cacheExplore() {
         return new CacheExplore();
     }
 
     @Provides
     @Singleton
-    IRepositoryExplore repositoryExplore(){
+    IRepositoryExplore repositoryExplore() {
         return new RepositoryExplore();
     }
 
     @Provides
     @Singleton
-    INavigator navigator(){
+    INavigator navigator() {
         return new Navigator();
     }
 }

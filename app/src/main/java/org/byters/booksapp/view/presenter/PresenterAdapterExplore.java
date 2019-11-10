@@ -68,6 +68,7 @@ public class PresenterAdapterExplore implements IPresenterAdapterExplore {
     @Override
     public void onSearch(String query) {
         //todo implement
+        navigator.navigateBookRequest();
     }
 
     @Override

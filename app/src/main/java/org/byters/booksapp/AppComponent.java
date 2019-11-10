@@ -5,6 +5,7 @@ import org.byters.booksapp.repository.RepositoryExplore;
 import org.byters.booksapp.view.presenter.PresenterAdapterExplore;
 import org.byters.booksapp.view.presenter.PresenterExplore;
 import org.byters.booksapp.view.ui.activity.ActivityMain;
+import org.byters.booksapp.view.ui.adapter.AdapterBookRequest;
 import org.byters.booksapp.view.ui.adapter.AdapterExplore;
 import org.byters.booksapp.view.ui.adapter.AdapterExploreBooksCarousel;
 import org.byters.booksapp.view.ui.adapter.AdapterExploreNews;
@@ -53,4 +54,6 @@ public interface AppComponent {
     void inject(ActivityMain activityMain);
 
     void inject(ViewHolderNews viewHolderNews);
+
+    void inject(AdapterBookRequest adapterBookRequest);
 }

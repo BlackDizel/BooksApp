@@ -2,6 +2,7 @@ package org.byters.booksapp;
 
 import android.support.v4.app.FragmentManager;
 
+import org.byters.booksapp.view.ui.fragment.FragmentBookRequest;
 import org.byters.booksapp.view.ui.fragment.FragmentExplore;
 
 import java.lang.ref.WeakReference;
@@ -22,6 +23,14 @@ public class Navigator implements INavigator {
         if (refManager == null || refManager.get() == null) return;
         refManager.get().beginTransaction()
                 .replace(layoutId, new FragmentExplore())
+                .commit();
+    }
+
+    @Override
+    public void navigateBookRequest() {
+        if (refManager == null || refManager.get() == null) return;
+        refManager.get().beginTransaction()
+                .replace(layoutId, new FragmentBookRequest())
                 .commit();
     }
 
