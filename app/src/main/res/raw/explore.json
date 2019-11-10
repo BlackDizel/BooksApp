@@ -30,17 +30,17 @@
         {
           "bookId": "4",
           "title": "50 оттенков серого",
-          "image": "http://placekitten.com/504/500"
+          "image": "https://top-knig.ru/wp-content/uploads/2015/03/50-ottenkov-serogo.jpg"
         },
         {
           "bookId": "5",
           "title": "история россии",
-          "image": "http://placekitten.com/505/500"
+          "image": "https://www.moscowbooks.ru/image/book/446/w600/i446762.jpg"
         },
         {
           "bookId": "6",
           "title": "тихий дон",
-          "image": "http://placekitten.com/506/500"
+          "image": "https://static.librebook.me/uploads/pics/01/90/171.jpg"
         }
       ]
     },
@@ -52,17 +52,17 @@
         {
           "bookId": "7",
           "title": "таймменеджмент от а до я",
-          "image": "http://placekitten.com/507/500"
+          "image": "https://img1.labirint.ru/books/684833/big.jpg"
         },
         {
           "bookId": "8",
           "title": "как приручить дракона",
-          "image": "http://placekitten.com/508/500"
+          "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/image/398x565/234c7c011ba026e66d29567e1be1d1f7/i/m/img774_1_2.jpg"
         },
         {
           "bookId": "9",
           "title": "Веселые картинки",
-          "image": "http://placekitten.com/509/500"
+          "image": "https://img1.labirint.ru/books/198883/big.jpg"
         }
       ]
     },
@@ -72,18 +72,18 @@
       "items": [
         {
           "bookId": "10",
-          "title": "За рулем, август 2025",
-          "image": "http://placekitten.com/510/500"
+          "title": "За рулем",
+          "image": "https://a.d-cd.net/da0380es-1920.jpg"
         },
         {
           "bookId": "11",
           "title": "Моделист конструктор, сентябрь 2024",
-          "image": "http://placekitten.com/511/500"
+          "image": "http://modelist-konstruktor.ru/a/mk/13/07/mk1307.jpg"
         },
         {
           "bookId": "12",
           "title": "Сноб, октябрь 2025",
-          "image": "http://placekitten.com/512/500"
+          "image": "https://pressa.de/im_pic/1275.jpg"
         }
       ]
     },
