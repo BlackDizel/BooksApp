@@ -9,10 +9,12 @@ import org.byters.booksapp.view.presenter.IPresenterAdapterBookSuggest;
 import org.byters.booksapp.view.presenter.IPresenterAdapterExplore;
 import org.byters.booksapp.view.presenter.IPresenterExplore;
 import org.byters.booksapp.view.presenter.IPresenterFragmentBook;
+import org.byters.booksapp.view.presenter.IPresenterProfile;
 import org.byters.booksapp.view.presenter.PresenterAdapterBookSuggest;
 import org.byters.booksapp.view.presenter.PresenterAdapterExplore;
 import org.byters.booksapp.view.presenter.PresenterExplore;
 import org.byters.booksapp.view.presenter.PresenterFragmentBook;
+import org.byters.booksapp.view.presenter.PresenterProfile;
 
 import javax.inject.Singleton;
 
@@ -32,6 +34,12 @@ class AppModule {
     @Singleton
     IPresenterAdapterExplore presenterAdapterMain() {
         return new PresenterAdapterExplore();
+    }
+
+    @Provides
+    @Singleton
+    IPresenterProfile presenterProfile(){
+        return new PresenterProfile();
     }
 
     @Provides

@@ -17,4 +17,7 @@
     <string name="book_link">Ссылка на книгу (необязательно)</string>
     <string name="book_rent">Зарезервировать</string>
     <string name="library_available">Наличие в библиотеках</string>
+    <string name="favorite_books">Избранные книги</string>
+    <string name="books_in_rent">Книги на руках</string>
+    <string name="user_reviews">Отзывы</string>
 </resources>
