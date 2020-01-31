@@ -9,7 +9,9 @@ public interface INavigator {
 
     void navigateBookRequest();
 
-    void navigateBook();
+    void navigateBook(String book_id);
 
     void navigateProfile();
+
+    void navigateBookSearchResult();
 }

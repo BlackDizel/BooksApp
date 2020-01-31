@@ -6,6 +6,7 @@ import org.byters.api.view.INavigator;
 import org.byters.booksapp.view.ui.fragment.FragmentBook;
 import org.byters.booksapp.view.ui.fragment.FragmentBookRequest;
 import org.byters.booksapp.view.ui.fragment.FragmentExplore;
+import org.byters.booksapp.view.ui.fragment.FragmentListBooks;
 import org.byters.booksapp.view.ui.fragment.FragmentProfile;
 
 import java.lang.ref.WeakReference;
@@ -38,7 +39,7 @@ public class Navigator implements INavigator {
     }
 
     @Override
-    public void navigateBook() {
+    public void navigateBook(String book_id) {
         if (refManager == null || refManager.get() == null) return;
         refManager.get().beginTransaction()
                 .replace(layoutId, new FragmentBook())
@@ -50,6 +51,14 @@ public class Navigator implements INavigator {
         if (refManager == null || refManager.get() == null) return;
         refManager.get().beginTransaction()
                 .replace(layoutId, new FragmentProfile())
+                .commit();
+    }
+
+    @Override
+    public void navigateBookSearchResult() {
+        if (refManager == null || refManager.get() == null) return;
+        refManager.get().beginTransaction()
+                .replace(layoutId, new FragmentListBooks())
                 .commit();
     }
 

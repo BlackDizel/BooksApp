@@ -2,6 +2,7 @@ package org.byters.booksapp;
 
 
 import org.byters.api.memorycache.ICacheExplore;
+import org.byters.api.repository.IRepositoryBookSearch;
 import org.byters.api.repository.IRepositoryExplore;
 import org.byters.api.view.INavigator;
 import org.byters.api.view.presenter.IPresenterAdapterBookSuggest;
@@ -10,6 +11,7 @@ import org.byters.api.view.presenter.IPresenterExplore;
 import org.byters.api.view.presenter.IPresenterFragmentBook;
 import org.byters.api.view.presenter.IPresenterProfile;
 import org.byters.impl.memorycache.CacheExplore;
+import org.byters.impl.repository.RepositoryBookSearch;
 import org.byters.impl.repository.RepositoryExplore;
 import org.byters.booksapp.view.presenter.PresenterAdapterBookSuggest;
 import org.byters.booksapp.view.presenter.PresenterAdapterExplore;
@@ -65,6 +67,12 @@ class AppModule {
     @Singleton
     IRepositoryExplore repositoryExplore() {
         return new RepositoryExplore();
+    }
+
+    @Provides
+    @Singleton
+    IRepositoryBookSearch repositoryBookSearch() {
+        return new RepositoryBookSearch();
     }
 
     @Provides

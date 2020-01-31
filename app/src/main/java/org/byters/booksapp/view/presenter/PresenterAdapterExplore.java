@@ -2,6 +2,8 @@ package org.byters.booksapp.view.presenter;
 
 import android.view.ViewGroup;
 
+import org.byters.api.repository.IRepositoryBookSearch;
+import org.byters.api.repository.listener.IRepositoryBookSearchListener;
 import org.byters.api.view.presenter.IPresenterAdapterExplore;
 import org.byters.booksapp.BooksApplication;
 import org.byters.api.view.INavigator;
@@ -24,17 +26,23 @@ import javax.inject.Inject;
 public class PresenterAdapterExplore implements IPresenterAdapterExplore {
 
     private final ICacheExploreListener listenerCacheExplore;
+    private final SearchListener listenerSearch;
+
     @Inject
     INavigator navigator;
 
     @Inject
     ICacheExplore cacheExplore;
 
+    @Inject
+    IRepositoryBookSearch repositoryBookSearch;
+
     private WeakReference<IPresenterAdapterExploreListener> refListener;
 
     public PresenterAdapterExplore() {
         BooksApplication.getComponent().inject(this);
         cacheExplore.addListener(listenerCacheExplore = new ListenerCacheExplore());
+        listenerSearch = new SearchListener();
     }
 
     @Override
@@ -68,8 +76,7 @@ public class PresenterAdapterExplore implements IPresenterAdapterExplore {
 
     @Override
     public void onSearch(String query) {
-        //todo implement
-        navigator.navigateBookRequest();
+        repositoryBookSearch.request(query, listenerSearch);
     }
 
     @Override
@@ -153,6 +160,24 @@ public class PresenterAdapterExplore implements IPresenterAdapterExplore {
         public void onUpdate() {
             if (refListener == null || refListener.get() == null) return;
             refListener.get().onUpdate();
+        }
+    }
+
+    private class SearchListener implements IRepositoryBookSearchListener {
+
+        @Override
+        public void onFindOne(String book_id){
+            navigator.navigateBook(book_id);
+        }
+
+        @Override
+        public void onFindSeveral(){
+            navigator.navigateBookSearchResult();
+        }
+
+        @Override
+        public void onFindNone(){
+            navigator.navigateBookRequest();
         }
     }
 }

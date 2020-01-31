@@ -1,6 +1,7 @@
 package org.byters.booksapp;
 
 
+import org.byters.impl.repository.RepositoryBookSearch;
 import org.byters.impl.repository.RepositoryExplore;
 import org.byters.booksapp.view.presenter.PresenterAdapterExplore;
 import org.byters.booksapp.view.presenter.PresenterExplore;
@@ -77,4 +78,6 @@ public interface AppComponent {
     void inject(AdapterProfileBooksReviews adapterProfileBooksReviews);
 
     void inject(PresenterProfile presenterProfile);
+
+    void inject(RepositoryBookSearch repositoryBookSearch);
 }
