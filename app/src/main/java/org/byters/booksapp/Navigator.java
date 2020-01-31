@@ -1,8 +1,10 @@
 package org.byters.booksapp;
 
+import android.content.Context;
 import android.support.v4.app.FragmentManager;
 
 import org.byters.api.view.INavigator;
+import org.byters.api.view.ui.util.IHelperPopup;
 import org.byters.booksapp.view.ui.fragment.FragmentBook;
 import org.byters.booksapp.view.ui.fragment.FragmentBookRequest;
 import org.byters.booksapp.view.ui.fragment.FragmentExplore;
@@ -11,15 +13,25 @@ import org.byters.booksapp.view.ui.fragment.FragmentProfile;
 
 import java.lang.ref.WeakReference;
 
+import javax.inject.Inject;
+
 public class Navigator implements INavigator {
+
+    @Inject
+    IHelperPopup helperPopup;
 
     private WeakReference<FragmentManager> refManager;
     private int layoutId;
 
+    public Navigator() {
+        BooksApplication.getComponent().inject(this);
+    }
+
     @Override
-    public void set(FragmentManager supportFragmentManager, int flContainer) {
+    public void set(FragmentManager supportFragmentManager, int flContainer, Context context) {
         this.refManager = new WeakReference<>(supportFragmentManager);
         this.layoutId = flContainer;
+        helperPopup.setContext(context);
     }
 
     @Override

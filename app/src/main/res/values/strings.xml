@@ -10,7 +10,6 @@
     <string name="library_all">Все библиотеки</string>
     <string name="book_request_title">Данная книга не найдена в библиотеках</string>
     <string name="book_request_message">Хотите отправить запрос на добавление книги в фонды?</string>
-    <string name="mock_book_title">Растениеводство от А до Я</string>
     <string name="request_book">Заказать книгу</string>
     <string name="book_author">Автор книги (необязательно)</string>
     <string name="book_isbn">ISBN (необязательно)</string>
@@ -20,4 +19,5 @@
     <string name="favorite_books">Избранные книги</string>
     <string name="books_in_rent">Книги на руках</string>
     <string name="user_reviews">Отзывы</string>
+    <string name="booK_request_fail">Извините, у нас что-то сломалось. Попробуйте запросить книгу еще раз.</string>
 </resources>

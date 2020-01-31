@@ -1,6 +1,9 @@
 package org.byters.booksapp;
 
 
+import org.byters.booksapp.view.presenter.PresenterBookRequest;
+import org.byters.booksapp.view.ui.fragment.FragmentBookRequest;
+import org.byters.impl.repository.RepositoryBookRequest;
 import org.byters.impl.repository.RepositoryBookSearch;
 import org.byters.impl.repository.RepositoryExplore;
 import org.byters.booksapp.view.presenter.PresenterAdapterExplore;
@@ -80,4 +83,12 @@ public interface AppComponent {
     void inject(PresenterProfile presenterProfile);
 
     void inject(RepositoryBookSearch repositoryBookSearch);
+
+    void inject(FragmentBookRequest fragmentBookRequest);
+
+    void inject(PresenterBookRequest presenterBookRequest);
+
+    void inject(Navigator navigator);
+
+    void inject(RepositoryBookRequest repositoryBookRequest);
 }

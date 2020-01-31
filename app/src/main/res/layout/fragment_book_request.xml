@@ -37,6 +37,7 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
 
             <EditText
+                android:id="@+id/etBookTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -44,10 +45,10 @@
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/bg_round_grey_4dp"
                 android:gravity="center"
-                android:padding="8dp"
-                android:text="@string/mock_book_title" />
+                android:padding="8dp" />
 
             <EditText
+                android:id="@+id/etBookAuthor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -59,6 +60,7 @@
                 android:padding="8dp" />
 
             <EditText
+                android:id="@+id/etBookISBN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -81,6 +83,7 @@
                 android:padding="8dp" />
 
             <TextView
+                android:id="@+id/tvBookRequest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

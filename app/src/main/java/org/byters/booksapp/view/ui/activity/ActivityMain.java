@@ -22,7 +22,7 @@ public class ActivityMain extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         BooksApplication.getComponent().inject(this);
-        navigator.set(getSupportFragmentManager(), R.id.flContainer);
+        navigator.set(getSupportFragmentManager(), R.id.flContainer, this);
         navigator.navigateExplore();
 
         findViewById(R.id.ivExplore).setOnClickListener(this);
