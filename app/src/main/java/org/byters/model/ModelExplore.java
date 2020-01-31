@@ -41,6 +41,10 @@ public class ModelExplore {
         return ((ExploreItemBlock) data.get(carouselPosition)).itemTitle(position);
     }
 
+    public String blockItemId(int carouselPosition, int position) {
+        return ((ExploreItemBlock) data.get(carouselPosition)).itemId(position);
+    }
+
     public String blockTitle(int position) {
         return ((ExploreItemBlock) data.get(position)).title();
     }

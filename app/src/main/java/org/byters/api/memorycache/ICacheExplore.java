@@ -20,6 +20,8 @@ public interface ICacheExplore {
 
     String getBookTitle(int carouselPosition, int position);
 
+    String getBookId(int carouselPosition, int adapterPosition);
+
     String getCarouselTitle(int position);
 
     int getReviewsNum();

@@ -52,6 +52,11 @@ public class CacheExplore implements ICacheExplore {
     }
 
     @Override
+    public String getBookId(int carouselPosition, int position) {
+        return data == null ? "" : data.blockItemId(carouselPosition, position);
+    }
+
+    @Override
     public String getCarouselTitle(int position) {
         return data == null ? "" : data.blockTitle(position);
     }

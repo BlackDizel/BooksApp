@@ -25,13 +25,20 @@ public class ExploreItemBlock extends ExploreItem {
                 : items.get(position).title;
     }
 
+    public String itemId(int position) {
+        return items == null
+                || items.get(position) == null
+                ? ""
+                : items.get(position).bookId;
+    }
+
     public String title() {
         return title;
     }
 
     private class ExploreBlockItem {
-        private String blockId;
         private String title;
+        private String bookId;
         private String image;
     }
 }

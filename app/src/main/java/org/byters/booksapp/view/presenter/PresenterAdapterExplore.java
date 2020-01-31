@@ -111,8 +111,7 @@ public class PresenterAdapterExplore implements IPresenterAdapterExplore {
 
     @Override
     public void onClickBook(int carouselPosition, int adapterPosition) {
-        //todo implement
-        navigator.navigateBook();
+        navigator.navigateBook(cacheExplore.getBookId(carouselPosition,adapterPosition));
     }
 
     @Override
