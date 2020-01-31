@@ -1,7 +1,8 @@
 package org.byters.booksapp.view.presenter;
 
+import org.byters.api.view.presenter.IPresenterProfile;
 import org.byters.booksapp.BooksApplication;
-import org.byters.booksapp.INavigator;
+import org.byters.api.view.INavigator;
 import org.byters.booksapp.view.ui.adapter.listener.IAdapterBookInRentListener;
 import org.byters.booksapp.view.ui.adapter.listener.IAdapterBookListener;
 

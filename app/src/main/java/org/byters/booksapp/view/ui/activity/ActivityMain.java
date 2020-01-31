@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import org.byters.booksapp.BooksApplication;
-import org.byters.booksapp.INavigator;
+import org.byters.api.view.INavigator;
 import org.byters.booksapp.R;
 
 import javax.inject.Inject;

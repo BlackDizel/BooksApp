@@ -2,13 +2,14 @@ package org.byters.booksapp.view.presenter;
 
 import android.view.ViewGroup;
 
+import org.byters.api.view.presenter.IPresenterAdapterExplore;
 import org.byters.booksapp.BooksApplication;
-import org.byters.booksapp.INavigator;
+import org.byters.api.view.INavigator;
 import org.byters.booksapp.R;
-import org.byters.booksapp.memorycache.ICacheExplore;
-import org.byters.booksapp.memorycache.listener.ICacheExploreListener;
-import org.byters.booksapp.model.ExploreItemEnum;
-import org.byters.booksapp.view.presenter.listener.IPresenterAdapterExploreListener;
+import org.byters.api.memorycache.ICacheExplore;
+import org.byters.api.memorycache.listener.ICacheExploreListener;
+import org.byters.model.ExploreItemEnum;
+import org.byters.api.view.presenter.listener.IPresenterAdapterExploreListener;
 import org.byters.booksapp.view.ui.adapter.AdapterExploreNews;
 import org.byters.booksapp.view.ui.adapter.AdapterExploreReviewsCarousel;
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderBase;

@@ -5,9 +5,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.byters.api.view.ui.adapter.AdapterBase;
 import org.byters.booksapp.BooksApplication;
 import org.byters.booksapp.R;
-import org.byters.booksapp.view.presenter.IPresenterProfile;
+import org.byters.api.view.presenter.IPresenterProfile;
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderBase;
 
 import javax.inject.Inject;

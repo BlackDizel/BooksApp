@@ -8,9 +8,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import org.byters.api.view.ui.adapter.AdapterBase;
 import org.byters.booksapp.R;
 import org.byters.booksapp.view.ui.adapter.listener.IAdapterBookInRentListener;
-import org.byters.booksapp.view.ui.adapter.listener.IAdapterBookListener;
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderBase;
 
 public class AdapterBookInRent extends AdapterBase {

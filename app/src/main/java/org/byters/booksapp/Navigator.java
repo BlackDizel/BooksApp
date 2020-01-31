@@ -2,6 +2,7 @@ package org.byters.booksapp;
 
 import android.support.v4.app.FragmentManager;
 
+import org.byters.api.view.INavigator;
 import org.byters.booksapp.view.ui.fragment.FragmentBook;
 import org.byters.booksapp.view.ui.fragment.FragmentBookRequest;
 import org.byters.booksapp.view.ui.fragment.FragmentExplore;

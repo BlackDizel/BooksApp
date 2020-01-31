@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.byters.booksapp.R;
-import org.byters.booksapp.view.ui.adapter.AdapterBase;
+import org.byters.api.view.ui.adapter.AdapterBase;
 import org.byters.booksapp.view.ui.adapter.viewholder.util.SpacesItemDecoration;
 
 public class ViewHolderExploreCarouselBase extends ViewHolderBase {

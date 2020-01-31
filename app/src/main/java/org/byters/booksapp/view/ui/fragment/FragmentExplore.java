@@ -8,13 +8,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import org.byters.booksapp.BooksApplication;
 import org.byters.booksapp.R;
-import org.byters.booksapp.view.presenter.IPresenterExplore;
-import org.byters.booksapp.view.presenter.listener.IPresenterMainListener;
+import org.byters.api.view.presenter.IPresenterExplore;
+import org.byters.api.view.presenter.listener.IPresenterMainListener;
 import org.byters.booksapp.view.ui.adapter.AdapterExplore;
 
 import javax.inject.Inject;

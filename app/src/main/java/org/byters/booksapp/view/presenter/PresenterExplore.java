@@ -1,8 +1,9 @@
 package org.byters.booksapp.view.presenter;
 
+import org.byters.api.view.presenter.IPresenterExplore;
 import org.byters.booksapp.BooksApplication;
-import org.byters.booksapp.repository.IRepositoryExplore;
-import org.byters.booksapp.view.presenter.listener.IPresenterMainListener;
+import org.byters.api.repository.IRepositoryExplore;
+import org.byters.api.view.presenter.listener.IPresenterMainListener;
 
 import java.lang.ref.WeakReference;
 

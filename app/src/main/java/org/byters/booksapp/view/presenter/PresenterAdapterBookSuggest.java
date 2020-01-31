@@ -1,5 +1,7 @@
 package org.byters.booksapp.view.presenter;
 
+import org.byters.api.view.presenter.IPresenterAdapterBookSuggest;
+
 public class PresenterAdapterBookSuggest implements IPresenterAdapterBookSuggest {
     @Override
     public int getItemsNum() {

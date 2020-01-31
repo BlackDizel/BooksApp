@@ -1,15 +1,16 @@
 package org.byters.booksapp;
 
 
-import org.byters.booksapp.memorycache.CacheExplore;
-import org.byters.booksapp.memorycache.ICacheExplore;
-import org.byters.booksapp.repository.IRepositoryExplore;
-import org.byters.booksapp.repository.RepositoryExplore;
-import org.byters.booksapp.view.presenter.IPresenterAdapterBookSuggest;
-import org.byters.booksapp.view.presenter.IPresenterAdapterExplore;
-import org.byters.booksapp.view.presenter.IPresenterExplore;
-import org.byters.booksapp.view.presenter.IPresenterFragmentBook;
-import org.byters.booksapp.view.presenter.IPresenterProfile;
+import org.byters.api.memorycache.ICacheExplore;
+import org.byters.api.repository.IRepositoryExplore;
+import org.byters.api.view.INavigator;
+import org.byters.api.view.presenter.IPresenterAdapterBookSuggest;
+import org.byters.api.view.presenter.IPresenterAdapterExplore;
+import org.byters.api.view.presenter.IPresenterExplore;
+import org.byters.api.view.presenter.IPresenterFragmentBook;
+import org.byters.api.view.presenter.IPresenterProfile;
+import org.byters.impl.memorycache.CacheExplore;
+import org.byters.impl.repository.RepositoryExplore;
 import org.byters.booksapp.view.presenter.PresenterAdapterBookSuggest;
 import org.byters.booksapp.view.presenter.PresenterAdapterExplore;
 import org.byters.booksapp.view.presenter.PresenterExplore;
@@ -38,13 +39,13 @@ class AppModule {
 
     @Provides
     @Singleton
-    IPresenterProfile presenterProfile(){
+    IPresenterProfile presenterProfile() {
         return new PresenterProfile();
     }
 
     @Provides
     @Singleton
-    IPresenterFragmentBook presenterFragmentBook(){
+    IPresenterFragmentBook presenterFragmentBook() {
         return new PresenterFragmentBook();
     }
 

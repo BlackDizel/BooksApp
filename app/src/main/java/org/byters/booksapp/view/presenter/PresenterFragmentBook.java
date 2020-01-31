@@ -1,5 +1,7 @@
 package org.byters.booksapp.view.presenter;
 
+import org.byters.api.view.presenter.IPresenterFragmentBook;
+
 public class PresenterFragmentBook implements IPresenterFragmentBook {
 
     @Override

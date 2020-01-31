@@ -8,9 +8,10 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import org.byters.api.view.ui.adapter.AdapterBase;
 import org.byters.booksapp.BooksApplication;
 import org.byters.booksapp.R;
-import org.byters.booksapp.view.presenter.IPresenterAdapterBookSuggest;
+import org.byters.api.view.presenter.IPresenterAdapterBookSuggest;
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderBase;
 
 import javax.inject.Inject;

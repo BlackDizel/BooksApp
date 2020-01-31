@@ -17,7 +17,7 @@ import com.bumptech.glide.request.RequestOptions;
 import org.byters.booksapp.BooksApplication;
 import org.byters.booksapp.R;
 import org.byters.booksapp.view.ui.adapter.AdapterBookFavorite;
-import org.byters.booksapp.view.presenter.IPresenterProfile;
+import org.byters.api.view.presenter.IPresenterProfile;
 import org.byters.booksapp.view.ui.adapter.AdapterBookInRent;
 import org.byters.booksapp.view.ui.adapter.AdapterProfileBooksReviews;
 import org.byters.booksapp.view.ui.adapter.viewholder.util.SpacesItemDecoration;

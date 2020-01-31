@@ -1,7 +1,6 @@
 package org.byters.booksapp.view.ui.adapter;
 
 import android.support.annotation.NonNull;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -9,9 +8,10 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
+import org.byters.api.view.ui.adapter.AdapterBase;
 import org.byters.booksapp.BooksApplication;
 import org.byters.booksapp.R;
-import org.byters.booksapp.view.presenter.IPresenterFragmentBook;
+import org.byters.api.view.presenter.IPresenterFragmentBook;
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderBase;
 
 import javax.inject.Inject;

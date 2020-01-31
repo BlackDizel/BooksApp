@@ -15,7 +15,7 @@ import com.bumptech.glide.Glide;
 
 import org.byters.booksapp.BooksApplication;
 import org.byters.booksapp.R;
-import org.byters.booksapp.view.presenter.IPresenterFragmentBook;
+import org.byters.api.view.presenter.IPresenterFragmentBook;
 import org.byters.booksapp.view.ui.adapter.AdapterBookLibrary;
 import org.byters.booksapp.view.ui.adapter.AdapterBookReview;
 import org.byters.booksapp.view.ui.adapter.viewholder.util.SpacesItemDecoration;

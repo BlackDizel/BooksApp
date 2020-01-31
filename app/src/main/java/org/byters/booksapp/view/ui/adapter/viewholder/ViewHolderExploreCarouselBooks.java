@@ -4,7 +4,7 @@ import android.view.ViewGroup;
 
 import org.byters.booksapp.BooksApplication;
 import org.byters.booksapp.R;
-import org.byters.booksapp.view.presenter.IPresenterAdapterExplore;
+import org.byters.api.view.presenter.IPresenterAdapterExplore;
 import org.byters.booksapp.view.ui.adapter.AdapterExploreBooksCarousel;
 
 import javax.inject.Inject;

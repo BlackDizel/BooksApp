@@ -4,9 +4,10 @@ import android.support.annotation.NonNull;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.byters.api.view.ui.adapter.AdapterBase;
 import org.byters.booksapp.BooksApplication;
 import org.byters.booksapp.R;
-import org.byters.booksapp.view.presenter.IPresenterFragmentBook;
+import org.byters.api.view.presenter.IPresenterFragmentBook;
 import org.byters.booksapp.view.ui.adapter.viewholder.ViewHolderBase;
 
 import javax.inject.Inject;
