@@ -1,6 +1,10 @@
 package org.byters.booksapp;
 
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import org.byters.api.memorycache.ICacheBookSearch;
 import org.byters.api.memorycache.ICacheExplore;
 import org.byters.api.network.IApiBooks;
 import org.byters.api.repository.IRepositoryBookRequest;
@@ -17,6 +21,7 @@ import org.byters.api.view.ui.util.IHelperPopup;
 import org.byters.booksapp.network.util.ExploreItemDeserializer;
 import org.byters.booksapp.view.presenter.PresenterBookRequest;
 import org.byters.booksapp.view.ui.util.HelperPopup;
+import org.byters.impl.memorycache.CacheBookSearch;
 import org.byters.impl.memorycache.CacheExplore;
 import org.byters.impl.repository.RepositoryBookRequest;
 import org.byters.impl.repository.RepositoryBookSearch;
@@ -34,6 +39,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -133,5 +139,11 @@ class AppModule {
                 .client(client)
                 .build()
                 .create(IApiBooks.class);
+    }
+
+    @Singleton
+    @Provides
+    ICacheBookSearch cacheBookSearch(){
+        return new CacheBookSearch();
     }
 }
